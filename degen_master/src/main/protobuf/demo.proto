@@ -1,0 +1,70 @@
+syntax = "proto2";
+
+package degenfs;
+
+option java_package = "degenfs";
+option java_outer_classname = "FSMessages";
+
+message Message{
+    required string id = 1;
+    required PacketType type = 2;
+    required bool data = 3;
+    repeated NodeEvent nodeEvents = 4;
+    enum PacketType{
+        PING = 0;
+        ACK = 1;
+        DATA = 2;
+    }
+    enum Event{
+        JOIN = 0;
+        FAIL = 1;
+        LEAVE = 2;
+    }
+    message NodeEvent{
+        required Event event = 1;
+        required string id =2;
+    }
+}
+
+message QueryMessage {
+    required string id = 1;
+    required OpType type = 2;
+    required string sdfsName = 3;
+    enum OpType {
+        PUT = 0;
+        GET = 1;
+        DELETE = 2;
+        LS = 3;
+        VERSION = 4;
+    }
+}
+
+message QueryResponseMessage {
+    required int32 status = 1;
+    repeated string replicas = 2;
+}
+
+message RequestMessage {
+    required ReqType type = 1;
+    required string sdfsName = 2;
+    repeated string sendTo = 3;
+    optional int32 versions = 4;
+    enum ReqType {
+        PUT = 0;
+        GET = 1;
+        DELETE = 2;
+        REPLICATE = 3;
+        INFO = 4;
+    }
+}
+
+message ElectionMessage {
+    required ElecType type = 1;
+    required string initiator = 2;
+    required string id = 3;
+
+    enum ElecType {
+        ELECTION = 0;
+        ELECTED = 1;
+    }
+}

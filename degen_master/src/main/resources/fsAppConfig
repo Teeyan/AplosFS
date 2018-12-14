@@ -1,0 +1,7 @@
+introducerHostId=fa18-cs425-g16-01.cs.illinois.edu
+introducerPort=7091
+serverPort=7091
+dataTransferPort=7092
+masterPort=7093
+electionPort=7094
+
