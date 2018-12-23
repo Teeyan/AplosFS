@@ -1,8 +1,8 @@
-# DegenFS
+# AplosFS
 simple, fault tolerant, distributed file system
 
-## Degen
-Why is this a degenerate file system? Because it runs from the command line and is currently only capable of
+## Aplos
+Why is this a simple file system? Because it runs from the command line and is currently only capable of
 uploading/downloading/querying files. Also the primary Introducer node for our network has a rough time recovering from failures.
 It is fault tolerant up to 3 consecutive failures though and is "surprisingly" performant.
 
