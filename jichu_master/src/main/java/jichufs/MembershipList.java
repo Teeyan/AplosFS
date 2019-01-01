@@ -1,4 +1,4 @@
-package degenfs;
+package jichufs;
 
 import com.google.common.cache.CacheBuilder;
 import com.google.common.cache.CacheLoader;

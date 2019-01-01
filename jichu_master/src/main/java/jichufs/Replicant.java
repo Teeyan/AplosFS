@@ -1,4 +1,4 @@
-package degenfs;
+package jichufs;
 
 import lombok.Builder;
 import lombok.extern.slf4j.Slf4j;
@@ -20,7 +20,7 @@ import java.net.Socket;
 import java.net.ServerSocket;
 import java.net.InetAddress;
 
-import static degenfs.FSMessages.RequestMessage;
+import static jichufs.FSMessages.RequestMessage;
 /**
 * Always on thread responsible for responding to Query Thread requests from other servers.
 * Handles the following:

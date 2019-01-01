@@ -1,4 +1,4 @@
-package degenfs;
+package jichufs;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

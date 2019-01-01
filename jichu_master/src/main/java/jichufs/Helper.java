@@ -1,4 +1,4 @@
-package degenfs;
+package jichufs;
 
 import lombok.var;
 import org.springframework.beans.factory.annotation.Autowired;

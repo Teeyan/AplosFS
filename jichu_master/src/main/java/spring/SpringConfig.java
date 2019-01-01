@@ -6,6 +6,6 @@ import org.springframework.context.annotation.PropertySource;
 
 @Configuration
 @PropertySource("classpath:fsAppConfig")
-@ComponentScan(basePackages = "degenfs")
+@ComponentScan(basePackages = "jichufs")
 public class SpringConfig {
 }

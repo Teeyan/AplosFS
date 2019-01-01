@@ -1,8 +1,8 @@
 syntax = "proto2";
 
-package degenfs;
+package jichufs;
 
-option java_package = "degenfs";
+option java_package = "jichufs";
 option java_outer_classname = "FSMessages";
 
 message Message{

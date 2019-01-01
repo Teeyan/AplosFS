@@ -1,4 +1,4 @@
-package degenfs;
+package jichufs;
 
 
 import lombok.Setter;
@@ -17,7 +17,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import static degenfs.FSMessages.Message;
+import static jichufs.FSMessages.Message;
 @Component
 @Slf4j
 @Setter

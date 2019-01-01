@@ -1,4 +1,4 @@
-package degenfs;
+package jichufs;
 
 import lombok.Builder;
 import lombok.Getter;
@@ -19,8 +19,8 @@ import java.util.Random;
 import java.net.Socket;
 import java.net.InetAddress;
 
-import static degenfs.FSMessages.QueryMessage;
-import static degenfs.FSMessages.QueryResponseMessage;
+import static jichufs.FSMessages.QueryMessage;
+import static jichufs.FSMessages.QueryResponseMessage;
 /**
 * Thread delegated by the main control flow to act as intermediate for user requests.
 * Responsible for communicating between the master and using info to fulfill requests at Replicants.

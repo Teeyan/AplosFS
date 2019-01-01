@@ -1,4 +1,4 @@
-package degenfs;
+package jichufs;
 
 import lombok.extern.slf4j.Slf4j;
 import lombok.var;
@@ -16,7 +16,7 @@ import java.util.Properties;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 
-import static degenfs.FSMessages.QueryMessage;
+import static jichufs.FSMessages.QueryMessage;
 /**
  * Entry point for all nodes, will be running both 
  */

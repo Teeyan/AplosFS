@@ -1,4 +1,4 @@
-package degenfs;
+package jichufs;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -17,8 +17,7 @@ import java.io.*;
 
 import java.util.*;
 import java.net.*;
-import degenfs.FSMessages.*;
-
+import jichufs.FSMessages.*;
 
 @Component
 @Getter
