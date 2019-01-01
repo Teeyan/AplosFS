@@ -31,9 +31,9 @@ public class MembershipList {
     public MembershipList() {
         membersMap = new ConcurrentSkipListMap<>();
         this.hostId = ""; //get ip through socket api and read port from appconfig
-        recentUpdatesCache = CacheBuilder.newBuilder().expireAfterWrite(2, TimeUnit.SECONDS).build(new CacheLoader<String, CS425Messages.Message.NodeEvent>() {
+        recentUpdatesCache = CacheBuilder.newBuilder().expireAfterWrite(2, TimeUnit.SECONDS).build(new CacheLoader<String, FSMessages.Message.NodeEvent>() {
             @Override
-            public CS425Messages.Message.NodeEvent load(String s) throws Exception {
+            public FSMessages.Message.NodeEvent load(String s) throws Exception {
                 return null;
             }
         });

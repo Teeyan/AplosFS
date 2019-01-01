@@ -1,5 +1,4 @@
-package edu.illinois.cs425;
-
+package jichufs;
 
 import com.jcabi.ssh.Shell;
 import com.jcabi.ssh.Ssh;
@@ -26,7 +25,7 @@ public class AppTest {
         this.bytes = Files.readAllBytes(f.toPath());
 
         final Properties config = new Properties();
-        config.load(new FileInputStream("mp2AppConfig"));
+        config.load(new FileInputStream("fsAppConfig"));
 
         machineIds = Arrays.asList(config.getProperty("machineIds").split(","));
 //

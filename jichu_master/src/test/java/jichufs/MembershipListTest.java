@@ -1,4 +1,4 @@
-package edu.illinois.cs425;
+package jichufs;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
